@@ -5,7 +5,7 @@ import { CardProduct } from "../Card/CardProduct"
 import { useMamaClara } from "../../Context/ContextMamaClara"
 export const Market = () => {
 
-    const [elements,SetElements]=useState(["Pizza","Empanadas"])
+    const [elements]=useState(["Pizza","Empanadas"])
       const [active,SetActive]=useState("Pizzas")
       const Context = useMamaClara()
   return (

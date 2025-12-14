@@ -1,6 +1,6 @@
 import "../Card/CardProducts.css"
 import PizzaFuga from "../../Resources/PizzaFugazzeta.jpeg"
-import {  useContext, useState } from "react"
+import {   useState } from "react"
 import { useMamaClara } from "../../Context/ContextMamaClara"
 
 export const CardProduct = () => {
