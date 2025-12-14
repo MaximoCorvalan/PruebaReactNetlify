@@ -1,18 +1,19 @@
 header {
     position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
 
+    height: 80px;              /* 🔴 CLAVE */
     display: flex;
+    align-items: center;       /* centra vertical */
+    justify-content: space-between;
+
     background-color: rgb(198, 22, 24);
     color: white;
     font-style: italic;
     font-size: 17px;
     font-weight: bold;
-
-    align-items: center;
-    justify-content: space-between;
-
-    height: 80px;
     width: 100%;
 
     z-index: 1000;
