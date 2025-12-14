@@ -1,0 +1,158 @@
+.ContMarket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(179, 19, 22);
+    margin-top: 40px;
+    color: white;
+    padding: 10px;
+    height: 85vh;
+ 
+}
+
+.ContMarket h3 {
+    font-size: 24px;
+    margin: 0;
+}
+.ConteinerProducts {
+
+    display: grid;
+    gap: 30px; /* opcional */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 30px;
+    place-items: center;
+    margin: 15px;
+
+  
+}
+
+
+.Market__Submenu_Items
+{
+    display: flex;
+
+    margin: 0;
+    
+ 
+}
+.title_Market
+{
+    margin-top: 3px;
+}
+.Market__Submenu {
+    margin: 0;
+    display: flex;
+    font-size: 25px;
+
+
+    align-items: center;
+    justify-content: center;
+
+
+    width: 90%;
+}
+
+.Market__Submenu_Items li {
+    list-style: none;
+
+    padding: 8px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.Active {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 12px;
+}
+
+
+.contProduct {
+    overflow-y: scroll;
+    background-color: rgb(222, 228, 233);
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 10px;
+    height: 100%;
+}
+
+.contProduct::-webkit-scrollbar { width: 10px; }
+.contProduct::-webkit-scrollbar-track { background: #f0f0f0;  padding: 10px; }
+.contProduct::-webkit-scrollbar-thumb { background: #8f4d4e; border-radius: 8px; padding: 10px; }
+
+
+/* ------------------ BOTÓN ------------------ */
+
+.btnContinuar {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    width: 140px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 10px;
+    position: static;
+}
+
+.btnContinuar span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btnContinuar span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+.btnContinuar:hover span {
+    padding-right: 15px;
+ 
+  
+}
+
+.btnContinuar:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.Continue
+{
+    display: flex;
+    align-items: center;
+     justify-content: center;
+     gap: 40px
+     
+
+
+}
+
+.Continue p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+  min-width: 90px;                   /* fija ancho mínimo del total */
+  text-align: right;
+
+}
+
+@media (max-width:700px) {
+  .ContMarket {
+    height: auto;         /* sin altura fija */
+    align-items: stretch; /* permite ancho completo */
+  }
+  .contProduct {
+    overflow-y: visible;  /* scroll lo maneja la página */
+    max-height: none;
+  }
+}

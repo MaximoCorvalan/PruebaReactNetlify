@@ -1,0 +1,42 @@
+.banner-wrapper {
+  display: flex;
+
+  height: 45vh;
+margin-top: 4px;
+  overflow: hidden;
+  padding: 10px 0;
+
+
+  
+
+
+}
+.banner-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 45s linear infinite;
+  gap: 15px;
+}
+.banner-img {
+  height: 100%;         /* ajustá a gusto */
+
+  object-fit: cover;
+  border-radius: 10px;
+ 
+    box-shadow: 10px 3px 10px rgba(0, 0, 0, 0.5); /* sombra clásica */
+
+}
+
+@keyframes scroll {
+
+     0% {
+      transform: translateX(0);
+
+    }
+    100%{
+        transform: translateX(-50%);
+
+    }
+    
+}
+

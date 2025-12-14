@@ -1,0 +1,18 @@
+/* src/App.css */
+body {
+  margin: 0;
+}
+
+.whassapIcon {
+  position: fixed;
+
+
+
+    right: 20px;   /* 👉 distancia del borde derecho */
+  bottom: 20px;  /* opcional */
+  
+  height: 60px;
+
+
+
+}

@@ -1,0 +1,104 @@
+
+
+
+.Producto__Description
+{
+  
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  
+}
+
+.Producto__Description p
+{
+    margin-top: 9px;
+    font-size: 14px;
+    
+
+
+}
+.Product__Card {
+
+    width: 320px;
+    background-color: rgb(250, 246, 246);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    color: black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(80, 78, 78);
+  
+}
+
+
+
+.imgCont
+{    border-radius: 12px 12px 0 0;
+    height: 100%;
+    width: 100%;  
+    object-fit: cover;
+}
+.Producto__Name
+{
+    margin: 0;
+    margin-top: 10px;
+
+}
+.Producto__Market
+{
+   
+    display:  flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+
+.Market__price
+{
+    
+    color: rgb(141, 16, 18);
+    font-weight:600;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+
+
+
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f7f7f7;
+  padding: 6px 14px;
+  border-radius: 50px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.qty-btn {
+  background:rgb(179, 19, 22);
+  color: white;
+  border: none;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.qty-btn:hover {
+  background: #7e0a0a;
+}
+
+.qty-number {
+  font-size: 18px;
+  font-weight: 600;
+}

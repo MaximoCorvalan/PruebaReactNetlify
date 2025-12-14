@@ -1,0 +1,78 @@
+header
+{
+    display:  flex;
+    background-color:rgb(198, 22, 24);
+   color: rgb(255, 255, 255);
+   font-style: italic;
+   font-size: 17px;
+     font-weight: bold;
+     align-items: center;
+     justify-content: space-between;
+     position: sticky;
+     top: 0;
+     width: 100%; 
+     z-index: 10;
+     box-shadow: 0 1px 10px 1px #3b3b3b;
+
+   
+     
+ 
+}
+.HeaderList a {
+  color: inherit;        /* usa el color del contenedor */
+  text-decoration: none; /* sin subrayado */
+}
+
+.HeaderList a:hover {
+  text-decoration: none; /* asegura que no aparezca */
+}
+.HeaderList
+{
+    margin-right: 10px;
+}
+.HeaderList >ul
+{
+   display: flex;
+   gap:  16px;
+    list-style: none;  
+
+
+
+
+}
+.HeaderList > ul > li  {
+  position: relative;
+  border-bottom:  solid transparent;
+  transition: border-color 0.5s ease-in-out;
+}
+
+.HeaderList > ul > li:hover {
+  cursor: pointer;
+  border-bottom-color: currentColor; /* aparece el “subrayado” */
+}
+
+
+header>div>img
+{
+    width: 100%;
+  height: 100%;
+  object-fit: contain; 
+ 
+ 
+}
+   
+.contLogo
+{
+  padding:4px;
+  height:80px;
+}
+
+@media (max-width:700px)
+{
+  .HeaderList > ul > li  {
+    font-size: 15px;
+  
+}
+
+
+}
