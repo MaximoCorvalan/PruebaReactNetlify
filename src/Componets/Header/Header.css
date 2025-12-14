@@ -1,5 +1,5 @@
 header {
-    position: sticky;
+    position:sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -68,14 +68,19 @@ header>div>img
   height:80px;
 }
 
-@media (max-width:700px)
-{
-  .HeaderList > ul > li  {
+@media (max-width: 700px) {
+  header {
+    position: fixed !important; /* Fuerza fixed en móviles */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    height: 80px; /* Asegura la altura */
+    z-index: 1000;
+  }
+
+  .HeaderList > ul > li {
     font-size: 15px;
-  
-}
-
-
-
+  }
 
 }
