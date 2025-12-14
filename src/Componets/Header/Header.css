@@ -17,7 +17,7 @@ header {
     width: 100%;
 
     z-index: 1000;
-    box-shadow: 0 1px 10px 1px #3b3b3b;
+   box-shadow: 0 15px 12px -6px rgba(0, 0, 0, 0.45); 
 }
 .HeaderList a {
   color: inherit;        /* usa el color del contenedor */
@@ -74,6 +74,8 @@ header>div>img
     font-size: 15px;
   
 }
+
+
 
 
 }

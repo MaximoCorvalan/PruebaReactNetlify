@@ -16,7 +16,7 @@ function App() {
    
    <ProviderMamaClara>
 
-
+<div className='OutBorder'></div>
     <Header></Header>
     <Banner></Banner>
     <AboutUs></AboutUs>

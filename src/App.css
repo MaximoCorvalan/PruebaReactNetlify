@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
 
+
 }
 #root
 {
@@ -19,5 +20,11 @@ footer {
 }
 @media (max-width:700px)
 {
+  .OutBorder
+  {
+        background-color: rgb(198, 22, 24);
+    height: 35px;
+  }
+ 
 
 }
