@@ -1,6 +1,6 @@
 html, body {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   margin: 0;
   padding: 0;
 
@@ -13,14 +13,4 @@ html, body {
 .ContMarket,
 footer {
   scroll-margin-top: 90px;
-}
-@media (max-width:700px)
-{
-  .OutBorder
-  {
-        background-color: rgb(198, 22, 24);
-    height: 35px;
-  }
- 
-
 }

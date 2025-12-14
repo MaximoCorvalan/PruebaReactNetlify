@@ -3,6 +3,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    height: 10dvh;
 
                 /* 🔴 CLAVE */
     display: flex;
@@ -68,19 +69,39 @@ header>div>img
   height:80px;
 }
 
+
 @media (max-width: 700px) {
   header {
-    position: fixed !important; /* Fuerza fixed en móviles */
+    position: fixed !important;
     top: 0;
     left: 0;
     right: 0;
-    width: 100vw; /* Ocupa todo el ancho de la ventana */
-    height: 80px; /* Asegura la altura */
+    width: 100%;
+    height: auto; /* Cambiamos a auto para que se ajuste al contenido */
+    min-height: 80px; /* Establecemos una altura mínima */
     z-index: 1000;
+    display: flex;
+
+    align-items: center; /* Centramos horizontalmente */
+    justify-content: center; /* Centramos verticalmente */
+    padding: 10px 0; /* Añadimos un poco de padding arriba y abajo */
+    overflow: visible;
   }
+
 
   .HeaderList > ul > li {
     font-size: 15px;
   }
 
+  /* Ajustamos el contenedor del logo para que no sea tan alto en móviles */
+  .contLogo {
+    height: 50px; /* Reducimos la altura del logo */
+    padding: 0;
+    margin-bottom: 5px; /* Espacio entre el logo y la lista */
+  }
+
+  /* Asegurarnos de que el contenido de la página no se oculta detrás del header */
+  body {
+    padding-top: 80px; /* Igual a la altura del header */
+  }
 }
