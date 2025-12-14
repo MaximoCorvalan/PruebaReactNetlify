@@ -78,11 +78,11 @@ header>div>img
     left: 0;
     right: 0;
 
-    height: 90px;       /* 🔴 ALTURA FIJA */
+    height: 110px;       /* 🔴 ALTURA FIJA */
     width: 100%;
 
     display: flex;
-    flex-direction: row;   /* 🔴 NO column */
+    flex-direction: column;   /* 🔴 NO column */
     align-items: center;
     justify-content: space-between;
 
@@ -91,11 +91,11 @@ header>div>img
   }
 
   .contLogo {
-    height: 55px;
+    height: 65px;
   }
 
   body {
-    padding-top: 90px; /* MISMA altura que el header */
+    padding-top:  110px; ; /* MISMA altura que el header */
   }
 }
 
