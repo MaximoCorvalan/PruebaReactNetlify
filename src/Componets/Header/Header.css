@@ -1,21 +1,22 @@
-header
-{
-    display:  flex;
-    background-color:rgb(198, 22, 24);
-   color: rgb(255, 255, 255);
-   font-style: italic;
-   font-size: 17px;
-     font-weight: bold;
-     align-items: center;
-     justify-content: space-between;
-     position:fixed ;
-     top: env(safe-area-inset-top);
-     left: 0;
-     width: 100%; 
-     z-index: 10;
-     box-shadow: 0 1px 10px 1px #3b3b3b;
-       height: 80px; 
+header {
+    position: sticky;
+    top: 0;
 
+    display: flex;
+    background-color: rgb(198, 22, 24);
+    color: white;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: bold;
+
+    align-items: center;
+    justify-content: space-between;
+
+    height: 80px;
+    width: 100%;
+
+    z-index: 1000;
+    box-shadow: 0 1px 10px 1px #3b3b3b;
 }
 .HeaderList a {
   color: inherit;        /* usa el color del contenedor */
