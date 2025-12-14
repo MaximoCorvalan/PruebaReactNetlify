@@ -4,7 +4,7 @@ header {
     left: 0;
     right: 0;
 
-    height: 80px;              /* 🔴 CLAVE */
+                /* 🔴 CLAVE */
     display: flex;
     align-items: center;       /* centra vertical */
     justify-content: space-between;
