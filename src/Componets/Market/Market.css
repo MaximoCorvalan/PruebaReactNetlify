@@ -5,10 +5,11 @@
   flex-direction: column;
   align-items: center;
   background-color: rgb(179, 19, 22);
-  margin-top: 0;          /* el header ya compensa */
+  margin-top: 40px;          /* el header ya compensa */
   color: white;
   padding: 10px;
-  height: auto;           /* 🔴 mobile NO usa vh */
+  height: auto;  
+           /* 🔴 mobile NO usa vh */
 }
 
 .ContMarket h3 {
@@ -18,10 +19,11 @@
 
 .ConteinerProducts {
   display: grid;
-  gap: 30px;
+  margin-top: 17px;
+gap: 15px;
   grid-template-columns: 1fr;   /* una columna en mobile */
-  padding: 30px;
-  place-items: center;
+
+  place-items:center;
 }
 
 .Market__Submenu_Items {
@@ -39,13 +41,13 @@
   font-size: 25px;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 100%;
 }
 
 .Market__Submenu_Items li {
   list-style: none;
   padding: 8px;
-  margin-left: 3px;
+ 
   cursor: pointer;
 }
 
@@ -126,9 +128,12 @@
     margin-top: 40px;
   }
 
-  .ConteinerProducts {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
+
+   .ConteinerProducts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+  
 
   .contProduct {
     height: 100%;

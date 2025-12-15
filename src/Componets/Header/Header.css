@@ -37,6 +37,7 @@ header {
    display: flex;
    gap:  16px;
     list-style: none;  
+    width: 100%;
 
 
 
@@ -86,7 +87,7 @@ header>div>img
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 10px;
+    
     z-index: 1000;
   }
 
