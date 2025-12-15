@@ -42,13 +42,14 @@ gap: 15px;
   font-size: 25px;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 70%;
 }
 
 .Market__Submenu_Items li {
   list-style: none;
   padding: 8px;
  
+  
   cursor: pointer;
 }
 
