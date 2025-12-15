@@ -19,6 +19,7 @@ header {
 
     z-index: 1000;
    box-shadow: 0 15px 12px -6px rgba(0, 0, 0, 0.45); 
+
 }
 .HeaderList a {
   color: inherit;        /* usa el color del contenedor */
@@ -30,7 +31,7 @@ header {
 }
 .HeaderList
 {
-    margin-right: 10px;
+    margin-right: 5%;
 }
 .HeaderList >ul
 {
