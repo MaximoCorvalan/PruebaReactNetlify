@@ -7,7 +7,10 @@
   background-color: rgb(179, 19, 22);
   margin-top: 40px;          /* el header ya compensa */
   color: white;
-  padding: 10px;
+  width: 100%;
+
+
+
   height: auto;  
            /* 🔴 mobile NO usa vh */
 }
@@ -19,16 +22,19 @@
 
 .ConteinerProducts {
   display: grid;
+  margin: 0;
   margin-top: 17px;
-gap: 15px;
-  grid-template-columns: 1fr;   /* una columna en mobile */
+  gap: 15px;
+  grid-template-columns: auto;   /* una columna en mobile */
 
   place-items:center;
+  
+
 }
 
 .Market__Submenu_Items {
   display: flex;
- 
+  font-size: clamp(18px, 4vw, 25px);
   margin: 0;
 }
 
@@ -61,12 +67,13 @@ gap: 15px;
 
 /* MOBILE → scroll normal de página */
 .contProduct {
+  margin: 0;
   background-color: rgb(222, 228, 233);
   border-radius: 10px;
-  width: 100%;
+  width: 98%;
   margin-top: 10px;
   height: auto;
-  overflow: visible;
+
 }
 
 /* ------------------ BOTÓN ------------------ */
@@ -114,6 +121,7 @@ gap: 15px;
   align-items: center;
   justify-content: center;
   gap: 40px;
+  padding-bottom: 10px;
 }
 
 .Continue p {
