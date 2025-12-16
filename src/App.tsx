@@ -23,7 +23,10 @@ function App() {
     <Market></Market>
     <Footer></Footer>
 
-    <img src={Whassap} className='whassapIcon' alt="LogoWhassao" />
+   <a href="https://wa.me/541130112155" target="_blank">
+
+        <img src={Whassap}  className='whassapIcon' alt="LogoWhassao" />
+     </a>
 
    </ProviderMamaClara>
 
