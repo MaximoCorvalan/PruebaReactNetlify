@@ -26,13 +26,14 @@ header {
   text-decoration: none; /* sin subrayado */
 }
 
+.HeaderList
+{
+  margin-right: 5%;
+}
 .HeaderList a:hover {
   text-decoration: none; /* asegura que no aparezca */
 }
-.HeaderList
-{
-    margin-right: 5%;
-}
+
 .HeaderList >ul
 {
    display: flex;
@@ -45,7 +46,7 @@ header {
 
 }
 .HeaderList > ul > li  {
-  position: relative;
+
   border-bottom:  solid transparent;
   transition: border-color 0.5s ease-in-out;
 }
@@ -75,30 +76,36 @@ header>div>img
 
  @media (max-width: 700px) {
   header {
-    position: fixed;
+    padding-top: 30px;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
 
-    height: 110px;       /* 🔴 ALTURA FIJA */
-    width: 100%;
-
+       height: auto;        /* ✅ CLAVE */
+    min-height: 110px;   /* opcional */     /* 🔴 ALTURA FIJA */
+    
     display: flex;
     flex-direction: column;   /* 🔴 NO column */
     align-items: center;
     justify-content: space-between;
-
+    
+    width: 100%;
     
     z-index: 1000;
   }
+
+  .HeaderList ul {
+  margin: 0;
+  padding: 0;
+}
+
 
   .contLogo {
     height: 65px;
   }
 
-  body {
-    padding-top:  110px; ; /* MISMA altura que el header */
-  }
+
 }
 
 
