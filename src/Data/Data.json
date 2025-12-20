@@ -1,0 +1,31 @@
+
+[
+    
+    {   
+        "id":1,
+        "nombre":"Pizza",
+        "urlImage":"src\\Resources\\PizzaFugazzeta.jpeg",
+        "precio":800,
+        "descripcion":"La maldita Pizza ricolini",
+        "tipo":1
+
+    },
+    {
+        "id":2,
+        "nombre":"Pizza",
+        "urlImage":"src\\Resources\\PizzaFugazzeta.jpeg",
+        "precio":800,
+        "descripcion":"La maldita Pizza ricolini",
+        "tipo":1
+    },
+    {
+        "id":3,
+        "nombre":"EmpanadaCarnosa",
+        "urlImage":"src\\Resources\\PizzaFugazzeta.jpeg",
+        "precio":800,
+        "descripcion":"La maldita Pizza ricolini",
+        "tipo":2
+    }
+
+
+]

@@ -88,13 +88,20 @@
     display: flex;
     flex-direction: column;
     
-   
+  
   }
+
+ 
+.about__list
+{
+    font-size: 20px;
+}
+
 
 
   .contText__p
   {
-    text-align: center;
-    font-size: 23px;
+    text-align:center;
+    font-size: 20px;
   }
 }

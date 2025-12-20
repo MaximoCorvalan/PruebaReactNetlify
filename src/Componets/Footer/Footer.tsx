@@ -8,7 +8,7 @@ import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 export const Footer = () => {
   return (
     <footer>
-        <div className="Footer__map">
+        <div className="Footer__map" id="Contact">
              <h2>Encontranos | Take Away</h2>
        
            <iframe className="Footer__Iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6178.048969387498!2d-58.83956692629531!3d-34.453719750845195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9d00672a6485%3A0xc39831e2dfdd71a0!2sMam%C3%A1%20Clara!5e0!3m2!1ses!2sar!4v1765229939676!5m2!1ses!2sar"  loading="lazy" ></iframe>

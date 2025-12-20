@@ -32,7 +32,7 @@ export const Header = () => {
             
            </li>
 
-            <li >
+            <li  onClick={()=>scrollToSection("Contact")}>
           
 
                CONTACTO
