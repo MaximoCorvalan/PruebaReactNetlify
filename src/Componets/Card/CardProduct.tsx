@@ -12,15 +12,16 @@ export const CardProduct = ({ Producto }: CardProductProps) => {
 
   return (
     <div className="Product__Card">
-      <img className="imgCont" src={Producto.urlImage}></img>
+      <img className="imgCont"  src={"https://drive.google.com/thumbnail?id=" + Producto.imgurl + "&sz=w400"} loading="lazy"
+  decoding="async"></img>
 
       <div className="Producto__Description">
-        <h4 className="Producto__Name">{Producto.nombre}</h4>
-        <p>{Producto.descripcion}</p>
+        <h4 className="Producto__Name">{Producto.name}</h4>
+        <p>{Producto.description}</p>
       </div>
 
       <div className="Producto__Market">
-        <p className="Market__price">${Producto.precio}</p>
+        <p className="Market__price">${Producto.price}</p>
 
         <div className="quantity">
           <button
@@ -42,7 +43,7 @@ export const CardProduct = ({ Producto }: CardProductProps) => {
                     return item;
                   })
                 );
-                UseContext.setPrecio(UseContext.precioTotal - Producto.precio);
+                UseContext.setPrecio(UseContext.precioTotal - Producto.price);
               }
             }}
           >
@@ -65,7 +66,7 @@ export const CardProduct = ({ Producto }: CardProductProps) => {
                     return item;
                   })
                 );
-              UseContext.setPrecio(UseContext.precioTotal + Producto.precio);
+              UseContext.setPrecio(UseContext.precioTotal + Producto.price);
             }}
           >
             +

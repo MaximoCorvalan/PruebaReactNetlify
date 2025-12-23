@@ -53,9 +53,12 @@ export const Market = () => {
       </div>
 
       <div className="contProduct">
+        
         <div className="ConteinerProducts">
-        {Context.Productos
-  .filter(p => p.tipo === (active === "Empanadas" ? 2 : 1))
+
+        {
+        Context.Productos
+  .filter(p => p.id_tipo === (active === "Empanadas" ? 2 : 1))
   .map(p => (
     <CardProduct key={p.id} Producto={p} />
   ))
