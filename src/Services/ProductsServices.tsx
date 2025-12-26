@@ -4,7 +4,7 @@ const BASE_URL ="https://mamaclaraapi.onrender.com/MamaClara/"
 export const ObtenerArticulos =async()=>
     {
         try
-        {
+        {const j =10;
 
             const response =  await fetch(BASE_URL+"GetMamaClaraItems")
             if(!response.ok)
